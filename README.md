@@ -1,16 +1,20 @@
 # tensorflow-gpu-installation-windows10
-This is the process that I followed, after atempting many other processes, to install the GPU version of Tensorflow
+This is the process that I followed, after atempting many other methods, to install the GPU version of Tensorflow
 
-FIRST** Install Microsoft Visual Studio Community 2015 update 3 from (https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads) login or create account, free
-	Also need the Visual Studio 2015 SKD from (https://my.visualstudio.com/Downloads?q=visual%20studio%202015&    wt.mc_id=o~msft~vscom~older-downloads) 
+**FIRST** 
+Install Microsoft Visual Studio Community 2015 update 3 from (https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads) login or create account, free
+You also need the Visual Studio 2015 SKD from (https://my.visualstudio.com/Downloads?q=visual%20studio%202015&    wt.mc_id=o~msft~vscom~older-downloads) 
 
-SECOND** Download CUDA v9.0(** must be 9) from (https://developer.nvidia.com/cuda-90-download-archive) following instructions (file:///C:/Program%20Files/NVIDIA%20GPU%20Computing%20Toolkit/CUDA/v10.0/doc/html/cuda-quick-start-guide/index.html)
+**SECOND**
+Download CUDA **v9.0 (must be 9)** from (https://developer.nvidia.com/cuda-90-download-archive) following instructions (file:///C:/Program%20Files/NVIDIA%20GPU%20Computing%20Toolkit/CUDA/v10.0/doc/html/cuda-quick-start-guide/index.html)
 	Run the CUDA sample nbody (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\5_Simulations\nbody) run "nbody_vs2015.sln) , retarget, install the new skd, after being prompted to do so, then rebuild 
 	Run the nbody application (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\bin\win64\Debug), close
 
-THIRD** Downlaod cuDNN zipped folder and extract to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0"
+**THIRD**
+Downlaod cuDNN zipped folder and extract to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0"
 
-FOURTH** Add CUDA to path, this should also add the cuDNN files to the path because you extracted to the v9.0 folder, if not, see below. (https://www.tensorflow.org/install/gpu)
+**FOURTH**
+Add CUDA to path, this should also add the cuDNN files to the path because you extracted to the v9.0 folder, if not, see below. (https://www.tensorflow.org/install/gpu)
 	SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;%PATH%
 	SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\CUPTI\libx64;%PATH%
 	SET PATH=C:\tools\cuda\bin;%PATH%
@@ -47,7 +51,8 @@ The following steps describe how to build a cuDNN dependent program. In the foll
         Variable Value: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0
 """
 
-FIFTH** Follow the Tensorflow download instructions from here (https://www.tensorflow.org/install/pip)
+**FIFTH** 
+Follow the Tensorflow download instructions from here (https://www.tensorflow.org/install/pip)
 	(I did a pip install to the system following the instructions there for tensorflow-gpu)
 """
  Choose one of the following TensorFlow packages to install from PyPI:
@@ -65,9 +70,13 @@ Package dependencies are automatically installed. These are listed in the setup.
 		python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
 """
 
-SIXTH** After install I went to CommandPrompt and started a Python session (python 3.6)
+**SIXTH** 
+After install I went to CommandPrompt and started a Python session (python 3.6)
 	in the Python session I ran 
+	"""
+	import tensorflow as tf
 	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+	"""
 	and it returned 
 	
 """
