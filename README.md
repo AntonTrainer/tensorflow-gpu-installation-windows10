@@ -15,7 +15,7 @@ Select "build solution" in VS, if it fails, select "retarget project" by right c
 Run the nbody application (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\bin\win64\Debug), close
 
 **THIRD**
-Download cuDNN zipped folder and extract to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0"
+Download cuDNN zipped folder and **extract to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0"** THIS IS NOT THE DEFAULT EXTRACT LOCATION
 
 **FOURTH**
 Add CUDA to path, this should also add the cuDNN files to the path because you extracted to the v9.0 folder, if not, see below. [from here](https://www.tensorflow.org/install/gpu)
