@@ -71,18 +71,22 @@ Package dependencies are automatically installed. These are listed in the setup.
 
 	Install
 		```python
-		pip3 install --user --upgrade tensorflow  # install in $HOME```
+		pip3 install --user --upgrade tensorflow  # install in $HOME
+		```
 	Verify Install from command prompt
 		```python
-		python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"```
+		python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
+		```
 """
 
 **SIXTH** 
 After install I went to CommandPrompt and started a Python session (python 3.6)
 	in the Python session I ran 
 	
-	```import tensorflow as tf
-	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))```
+	```python
+	import tensorflow as tf
+	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+	```
 	
 	and it returned 
 	
