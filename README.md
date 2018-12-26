@@ -9,7 +9,8 @@ You also need the Visual Studio 2015 SKD [from here](https://my.visualstudio.com
 **SECOND**
 Download CUDA **v9.0 (must be 9)** [here](https://developer.nvidia.com/cuda-90-download-archive) [following instructions](file:///C:/Program%20Files/NVIDIA%20GPU%20Computing%20Toolkit/CUDA/v10.0/doc/html/cuda-quick-start-guide/index.html)
 
-Run the CUDA sample nbody (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\5_Simulations\nbody) run "nbody_vs2015.sln) , retarget, install the new skd, after being prompted to do so, then rebuild 
+####Run the CUDA sample nbody (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\5_Simulations\nbody)(nbody_vs2015.sln) 
+Select "build solution" in VS, if it fails, select "retarget project" by right clicking on the project on the right side of the window, install the new skd when you are prompted to do so by VS, then rebuild the solution. 
 
 Run the nbody application (C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0\bin\win64\Debug), close
 
@@ -69,9 +70,11 @@ Follow the Tensorflow download instructions [from here](https://www.tensorflow.o
 Package dependencies are automatically installed. These are listed in the setup.py file under REQUIRED_PACKAGES. 
 
 	Install
-		```pip3 install --user --upgrade tensorflow  # install in $HOME```
-	Verify Install
-		```python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"```
+		```python
+		pip3 install --user --upgrade tensorflow  # install in $HOME```
+	Verify Install from command prompt
+		```python
+		python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"```
 """
 
 **SIXTH** 
