@@ -24,6 +24,7 @@ Add CUDA to path, this should also add the cuDNN files to the path because you e
 	SET PATH=C:\tools\cuda\bin;%PATH%```
 
 If this doesn't work, follow these instructions - 
+
 """
 The following steps describe how to build a cuDNN dependent program. In the following sections:
 
@@ -69,14 +70,15 @@ Follow the Tensorflow download instructions [from here](https://www.tensorflow.o
 
 Package dependencies are automatically installed. These are listed in the setup.py file under REQUIRED_PACKAGES. 
 
-	Install
-		```python
-		pip3 install --user --upgrade tensorflow  # install in $HOME
-		```
-	Verify Install from command prompt
-		```python
-		python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
-		```
+Install
+```python
+pip3 install --user --upgrade tensorflow  # install in $HOME
+```
+Verify Install from command prompt
+
+```
+python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
+```
 """
 
 **SIXTH** 
