@@ -85,12 +85,12 @@ python3 -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduc
 After install I went to CommandPrompt and started a Python session (python 3.6)
 	in the Python session I ran 
 	
-	```python
-	import tensorflow as tf
-	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
-	```
+```python
+import tensorflow as tf
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+```
 	
-	and it returned 
+and it returned 
 	
 """
 
