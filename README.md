@@ -19,9 +19,12 @@ Download cuDNN zipped folder and **extract to "C:\Program Files\NVIDIA GPU Compu
 
 **FOURTH**
 Add CUDA to path, this should also add the cuDNN files to the path because you extracted to the v9.0 folder, if not, see below. [from here](https://www.tensorflow.org/install/gpu)
-	```SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;%PATH%
-	SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\CUPTI\libx64;%PATH%
-	SET PATH=C:\tools\cuda\bin;%PATH%```
+
+```
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;%PATH%
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\CUPTI\libx64;%PATH%
+SET PATH=C:\tools\cuda\bin;%PATH%
+```
 
 If this doesn't work, follow these instructions - 
 
