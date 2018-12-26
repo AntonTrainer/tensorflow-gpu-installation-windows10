@@ -69,19 +69,21 @@ SIXTH** After install I went to CommandPrompt and started a Python session (pyth
 	in the Python session I ran 
 	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 	and it returned 
+	
 """
-2018-12-26 10:17:00.071546: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
-2018-12-26 10:17:00.470180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties:
-name: GeForce GTX 1070 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
-pciBusID: 0000:08:00.0
-totalMemory: 8.00GiB freeMemory: 6.61GiB
-2018-12-26 10:17:00.476602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
-2018-12-26 10:21:07.978605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
-2018-12-26 10:21:07.980844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0
-2018-12-26 10:21:07.982108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N
-2018-12-26 10:21:07.983572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6368 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1)
-Device mapping:
-/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1
-2018-12-26 10:21:07.990866: I tensorflow/core/common_runtime/direct_session.cc:307] Device mapping:
-/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1
+
+	2018-12-26 10:17:00.071546: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+	2018-12-26 10:17:00.470180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties:
+	name: GeForce GTX 1070 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+	pciBusID: 0000:08:00.0
+	totalMemory: 8.00GiB freeMemory: 6.61GiB
+	2018-12-26 10:17:00.476602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+	2018-12-26 10:21:07.978605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+	2018-12-26 10:21:07.980844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0
+	2018-12-26 10:21:07.982108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N
+	2018-12-26 10:21:07.983572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6368 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1)
+	Device mapping:
+	/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1
+	2018-12-26 10:21:07.990866: I tensorflow/core/common_runtime/direct_session.cc:307] Device mapping:
+	/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:08:00.0, compute capability: 6.1	
 """
